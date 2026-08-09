@@ -1,0 +1,53 @@
+version: "3.8"
+
+# ============================================================
+# TurtleBot4 Recruitment Task - docker-compose
+#
+# Three services sharing host networking (required for ROS 2 DDS
+# discovery + the WebSocket broadcaster on localhost:8765 to work
+# across containers) and X11 passthrough (required for the Gazebo
+# GUI window to display).
+#
+# WSLg (WSL2's built-in GUI support) exposes its X socket at
+# /mnt/wslg/.X11-unix and sets DISPLAY automatically - these compose
+# services just forward the host's existing DISPLAY/X11 socket in.
+# On native Linux, you may need `xhost +local:docker` first.
+# ============================================================
+
+x-common: &common
+  build:
+    context: .
+    dockerfile: Dockerfile
+  network_mode: host
+  environment:
+  - DISPLAY=${DISPLAY}
+  - LIBGL_ALWAYS_SOFTWARE=1
+  - IGN_GAZEBO_RENDER_ENGINE=ogre
+  - ROS_DOMAIN_ID=0
+  - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+  - CYCLONEDDS_URI=<CycloneDDS><Domain><Discovery><Peers><Peer address="127.0.0.1"/></Peers></Discovery></Domain></CycloneDDS>
+  volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    - ${WSLG_X11_SOCKET:-/mnt/wslg/.X11-unix}:/mnt/wslg/.X11-unix:rw
+
+services:
+  sim:
+    <<: *common
+    container_name: tb4_sim
+    command: ["sim"]
+
+  navigator:
+    <<: *common
+    container_name: tb4_navigator
+    command: ["navigator"]
+    depends_on:
+      - sim
+
+  slam:
+    <<: *common
+    container_name: tb4_slam
+    command: ["slam"]
+    depends_on:
+      - sim
+    profiles:
+      - slam   # only starts when explicitly requested: docker compose --profile slam up
