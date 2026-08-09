@@ -1,0 +1,18 @@
+[0.820s] Invoking command in '/home/riasathasan/Recruitment-task/build/questions': PYTHONPATH=/home/riasathasan/Recruitment-task/build/questions/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/riasathasan/Recruitment-task/install/questions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/riasathasan/Recruitment-task/build/questions/build --no-deps symlink_data
+[0.964s] running develop
+[1.057s] running egg_info
+[1.057s] writing questions.egg-info/PKG-INFO
+[1.057s] writing dependency_links to questions.egg-info/dependency_links.txt
+[1.057s] writing entry points to questions.egg-info/entry_points.txt
+[1.058s] writing requirements to questions.egg-info/requires.txt
+[1.058s] writing top-level names to questions.egg-info/top_level.txt
+[1.059s] reading manifest file 'questions.egg-info/SOURCES.txt'
+[1.064s] writing manifest file 'questions.egg-info/SOURCES.txt'
+[1.065s] running build_ext
+[1.065s] Creating /home/riasathasan/Recruitment-task/install/questions/lib/python3.10/site-packages/questions.egg-link (link to .)
+[1.065s] Installing waypoint_navigator script to /home/riasathasan/Recruitment-task/install/questions/lib/questions
+[1.068s] Installing websocket_broadcaster script to /home/riasathasan/Recruitment-task/install/questions/lib/questions
+[1.068s] 
+[1.068s] Installed /home/riasathasan/Recruitment-task/build/questions
+[1.069s] running symlink_data
+[1.096s] Invoked command in '/home/riasathasan/Recruitment-task/build/questions' returned '0': PYTHONPATH=/home/riasathasan/Recruitment-task/build/questions/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/riasathasan/Recruitment-task/install/questions/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/riasathasan/Recruitment-task/build/questions/build --no-deps symlink_data
