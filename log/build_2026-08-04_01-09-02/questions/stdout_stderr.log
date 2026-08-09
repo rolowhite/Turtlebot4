@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating questions.egg-info
+writing questions.egg-info/PKG-INFO
+writing dependency_links to questions.egg-info/dependency_links.txt
+writing entry points to questions.egg-info/entry_points.txt
+writing requirements to questions.egg-info/requires.txt
+writing top-level names to questions.egg-info/top_level.txt
+writing manifest file 'questions.egg-info/SOURCES.txt'
+reading manifest file 'questions.egg-info/SOURCES.txt'
+writing manifest file 'questions.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/riasathasan/Recruitment-task/install/questions/lib/python3.10/site-packages/questions.egg-link (link to .)
+Installing websocket_broadcaster script to /home/riasathasan/Recruitment-task/install/questions/lib/questions
+
+Installed /home/riasathasan/Recruitment-task/build/questions
+running symlink_data
+creating /home/riasathasan/Recruitment-task/install/questions/share/ament_index
+creating /home/riasathasan/Recruitment-task/install/questions/share/ament_index/resource_index
+creating /home/riasathasan/Recruitment-task/install/questions/share/ament_index/resource_index/packages
+symbolically linking /home/riasathasan/Recruitment-task/build/questions/resource/questions -> /home/riasathasan/Recruitment-task/install/questions/share/ament_index/resource_index/packages
+symbolically linking /home/riasathasan/Recruitment-task/build/questions/package.xml -> /home/riasathasan/Recruitment-task/install/questions/share/questions
+creating /home/riasathasan/Recruitment-task/install/questions/share/questions/launch
+symbolically linking /home/riasathasan/Recruitment-task/build/questions/launch/main_assignment.launch.py -> /home/riasathasan/Recruitment-task/install/questions/share/questions/launch
+creating /home/riasathasan/Recruitment-task/install/questions/share/questions/worlds
+symbolically linking /home/riasathasan/Recruitment-task/build/questions/level3.sdf -> /home/riasathasan/Recruitment-task/install/questions/share/questions/worlds

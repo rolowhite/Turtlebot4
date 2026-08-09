@@ -1,0 +1,4 @@
+[console_scripts]
+waypoint_navigator = questions.waypoint_navigator:main
+websocket_broadcaster = questions.websocket_broadcaster:main
+

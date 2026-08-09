@@ -1,0 +1,9 @@
+source;share/questions/hook/pythonpath.ps1
+source;share/questions/hook/pythonpath.dsv
+source;share/questions/hook/pythonpath.sh
+source;share/questions/hook/ament_prefix_path.ps1
+source;share/questions/hook/ament_prefix_path.dsv
+source;share/questions/hook/ament_prefix_path.sh
+source;../../build/questions/share/questions/hook/pythonpath_develop.ps1
+source;../../build/questions/share/questions/hook/pythonpath_develop.dsv
+source;../../build/questions/share/questions/hook/pythonpath_develop.sh

@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing questions.egg-info/PKG-INFO
+writing dependency_links to questions.egg-info/dependency_links.txt
+writing entry points to questions.egg-info/entry_points.txt
+writing requirements to questions.egg-info/requires.txt
+writing top-level names to questions.egg-info/top_level.txt
+reading manifest file 'questions.egg-info/SOURCES.txt'
+writing manifest file 'questions.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/riasathasan/Recruitment-task/install/questions/lib/python3.10/site-packages/questions.egg-link (link to .)
+Installing waypoint_navigator script to /home/riasathasan/Recruitment-task/install/questions/lib/questions
+Installing websocket_broadcaster script to /home/riasathasan/Recruitment-task/install/questions/lib/questions
+
+Installed /home/riasathasan/Recruitment-task/build/questions
+running symlink_data
