@@ -1,5 +1,12 @@
 # TurtleBot4 Waypoint Navigation & Sphere Detection — Recruitment Task
 
+***Simulation video link***
+
+
+In this video the largest object is RED
+Navigate to websocket_broadcaster.py and change the Waypoint co-ordinates to get a change in result
+
+
 A ROS 2 project built on top of a TurtleBot4 simulation (`SadmanSyfe/Recruitment-task`
 template): the robot receives a sequence of waypoints over a WebSocket
 connection, drives to each one in order, and at the final waypoint uses its
